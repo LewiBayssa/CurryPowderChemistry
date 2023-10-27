@@ -1,0 +1,243 @@
+main {
+    max-width: 800px; /* Adjust this value to your preference */
+    margin: 0 auto; /* Horizontally center the content */
+    padding: 20px;
+}
+
+/* Reset some default browser styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+
+}
+
+/* Define a background color and font styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0D1317;
+    color: #BEB0A7;
+    line-height: 1.6;
+    text-align: center;
+
+
+}
+.Aakash {
+    overflow: hidden
+}
+
+/* Style the header */
+header {
+    background-color: #8B9D83;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    text-align: center;
+
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main h2 {
+    margin-top: 20px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #8B9D83;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Add some spacing for readability */
+h2 {
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+
+
+}
+
+/* Add styles for links */
+a {
+    color: #0074d9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Additional CSS for Green Energy Solutions webpage */
+
+/* Style the section headings */
+h3 {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+
+
+}
+
+h4 {
+    font-weight: bold;
+    text-align: center;
+
+}
+
+/* Style the paragraphs for detailed information */
+main p {
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+/* Add a background color for information sections */
+section {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Style images (if you have any) */
+img {
+    max-width: 100%; /* Ensure images don't exceed their container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style the links within paragraphs */
+main a {
+    color: #0074d9; /* Blue color */
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+/* Style the footer copyright text */
+footer p {
+    font-size: 14px;
+    
+}
+
+/* Add a button style for call-to-action links */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0074d9; /* Blue color */
+    color: #fff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style the "Show More" button */
+#toggle-button {
+    background-color: #0074d9; /* Blue color for the button */
+    color: #fff; /* White text color */
+    border: none; /* Remove the button border */
+    padding: 10px 20px; /* Add padding for better visual appearance */
+    cursor: pointer; /* Change the cursor to a hand pointer on hover */
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+#toggle-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.initiative-container {
+    position: absolute;
+    top: 25%;
+    bottom: 0; /* Move the boxes to the bottom of the page */
+    right: 0; /* Align to the right */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    overflow: auto;
+}
+.initiative {
+    flex-basis: calc(25% - 20px);
+    width: 200px; /* Set the width to your desired value */
+    height: 200px; /* Set the height to your desired value */
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    overflow: hidden; /* Hide any content that overflows the box */
+}
+
+
+
+.initiative:hover {
+    transform: scale(1.05);
+}
+
+.initiative img {
+    width: 100%; /* Make the image take up 100% of the box width */
+    height: 100%; /* Make the image take up 100% of the box height */
+    object-fit: cover; /* Crop the image to fit within the box without stretching it */
+    border-radius: 10px;
+    margin-bottom: 50px; /* Adjust margin to separate the image from text */
+
+}
+
+.initiative h3 {
+    margin-top: 10px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+    flex-grow: 1;
+}
+
+/* Style the main content area (fills the available space) */
+main {
+    flex-grow: 1;
+}
+
+/* Style the footer */
+footer {
+    background-color: #8B9D83;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Ensure the footer doesn't overlap with the boxes */
+}
+
+.khoi {
+    bottom: 39px;
+
+}
