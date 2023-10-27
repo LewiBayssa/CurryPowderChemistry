@@ -15,4 +15,18 @@ document.addEventListener('DOMContentLoaded', function () {
             initiativeContainer.style.display = 'none';
         }
     });
+
+    // Function to update the scroll progress bar
+    function updateScrollProgressBar() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+    }
+
+    // Attach the scroll event listener to the window
+    window.addEventListener('scroll', updateScrollProgressBar);
+
+    // Call the function to initialize the scroll progress bar
+    updateScrollProgressBar();
 });
