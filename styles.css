@@ -1,10 +1,14 @@
 main {
-    max-width: 800px; /* Adjust this value to your preference */
-    margin: 0 auto; /* Horizontally center the content */
+    max-width: 1180px; 
+    margin: 0 auto; 
     padding: 20px;
+    width: 80%; 
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; 
 }
 
-/* Reset some default browser styles */
+
 body, h1, h2, p {
     margin: 0;
     padding: 0;
@@ -12,11 +16,11 @@ body, h1, h2, p {
 
 }
 
-/* Define a background color and font styles */
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #0D1317;
-    color: #BEB0A7;
+    background-color: #ebeff2;
+    color: #000000;
     line-height: 1.6;
     text-align: center;
 
@@ -26,9 +30,9 @@ body {
     overflow: hidden
 }
 
-/* Style the header */
+
 header {
-    background-color: #8B9D83;
+    background-color: #1a4480;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -43,44 +47,45 @@ header h1 {
 
 }
 
-/* Style the navigation menu */
 nav ul {
     list-style: none;
+    list-style-type: none
+
 }
 
 nav ul li {
     display: inline;
     margin-right: 20px;
+    list-style-type: none
+
 }
 
 nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+
 }
 
 main h2 {
     margin-top: 20px;
 }
 
-/* Style the footer */
 footer {
-    background-color: #8B9D83;
+    background-color: #3d4551;
     color: #fff;
     text-align: center;
     padding: 10px 0;
 }
 
-/* Add some spacing for readability */
 h2 {
     margin-top: 20px;
-    color: #fff;
+    color: #000000;
     text-align: center;
 
 
 }
 
-/* Add styles for links */
 a {
     color: #0074d9;
     text-decoration: none;
@@ -89,12 +94,10 @@ a {
 a:hover {
     text-decoration: underline;
 }
-/* Additional CSS for Green Energy Solutions webpage */
 
-/* Style the section headings */
 h3 {
     font-size: 24px;
-    color: #fff;
+    color: #000000;
     text-align: center;
 
 
@@ -106,77 +109,71 @@ h4 {
 
 }
 
-/* Style the paragraphs for detailed information */
 main p {
     margin-bottom: 10px;
     text-align: center;
 
 }
 
-/* Add a background color for information sections */
 section {
-    background-color: #fff; /* White background */
+    background-color: #fff; 
     padding: 20px;
     margin: 20px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
-/* Style images (if you have any) */
 img {
-    max-width: 100%; /* Ensure images don't exceed their container width */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; 
+    height: auto; 
 }
 
-/* Style the links within paragraphs */
 main a {
-    color: #0074d9; /* Blue color */
+    color: #0074d9; 
 }
 
 main a:hover {
     text-decoration: underline;
 }
 
-/* Style the footer copyright text */
+
 footer p {
     font-size: 14px;
     
 }
 
-/* Add a button style for call-to-action links */
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #0074d9; /* Blue color */
-    color: #fff; /* White text */
+    background-color: #0074d9; 
+    color: #fff; 
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3; 
 }
 
-/* Style the "Show More" button */
 #toggle-button {
-    background-color: #0074d9; /* Blue color for the button */
-    color: #fff; /* White text color */
-    border: none; /* Remove the button border */
-    padding: 10px 20px; /* Add padding for better visual appearance */
-    cursor: pointer; /* Change the cursor to a hand pointer on hover */
-    transition: background-color 0.3s; /* Smooth background color transition on hover */
-    border-radius: 5px; /* Add rounded corners */
+    background-color: #0074d9; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    border-radius: 5px; 
 }
 
 #toggle-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3; 
 }
 
 .initiative-container {
     position: absolute;
     top: 25%;
-    bottom: 0; /* Move the boxes to the bottom of the page */
-    right: 0; /* Align to the right */
+    bottom: 0; 
+    right: 0; 
     width: 100%;
     height: 100%;
     display: flex;
@@ -187,15 +184,15 @@ footer p {
 }
 .initiative {
     flex-basis: calc(25% - 20px);
-    width: 200px; /* Set the width to your desired value */
-    height: 200px; /* Set the height to your desired value */
+    width: 200px; 
+    height: 200px; 
     margin: 10px;
     text-align: center;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
     transition: transform 0.2s;
-    overflow: hidden; /* Hide any content that overflows the box */
+    overflow: hidden; 
 }
 
 
@@ -205,11 +202,11 @@ footer p {
 }
 
 .initiative img {
-    width: 100%; /* Make the image take up 100% of the box width */
-    height: 100%; /* Make the image take up 100% of the box height */
-    object-fit: cover; /* Crop the image to fit within the box without stretching it */
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
     border-radius: 10px;
-    margin-bottom: 50px; /* Adjust margin to separate the image from text */
+    margin-bottom: 50px; 
 
 }
 
@@ -219,22 +216,20 @@ footer p {
 .container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+    min-height: 100vh; 
     flex-grow: 1;
 }
 
-/* Style the main content area (fills the available space) */
 main {
     flex-grow: 1;
 }
 
-/* Style the footer */
 footer {
     background-color: #8B9D83;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: relative; /* Ensure the footer doesn't overlap with the boxes */
+    position: relative; 
 }
 
 .khoi {
@@ -251,25 +246,81 @@ footer {
   }
 
   
-/* Style the header: fixed position (always stay at the top) */
+
 .header {
     position: fixed;
     top: 0;
     z-index: 1;
     width: 100%;
-    background-color: #8B9D83;
+    background-color: #005ea2;
   }
   
-  /* The progress container (grey background) */
   .progress-container {
     width: 100%;
-    height: 5px;
+    height: 2px;
     background: #ccc;
   }
   
-  /* The progress bar (scroll indicator) */
   .progress-bar {
     height: 5px;
-    background: #20317c;
-    width: 15%;
+    background: #325f1f;
+    width: 0%;
   }
+
+  .example::-webkit-scrollbar {
+    display: none;
+  }
+  .vishwa {
+    color: #207544;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.team {
+    color:#000000
+}
+.round {
+    border-radius: 50px
+}
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  ul li::before {
+    content: "\2022"; 
+    padding-right: 5px; 
+  }
+  ul.lil li::before {
+    content: none; 
+}
+#wide {
+    width: 1000px; 
+    height: 500px; 
+}
+.image-text-container {
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    flex: 1;
+    max-width: 50%;
+    padding: 10px;
+}
+
+.text {
+    flex: 1;
+    max-width: 50%;
+    padding: 10px;
+}
+.content-box {
+    width: 80%; 
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5; 
+    border: 1px solid #ddd; 
+}
+#pencil {
+    background-color: #ffffff; 
+}
