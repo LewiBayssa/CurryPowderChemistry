@@ -183,7 +183,7 @@ footer p {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
-    transition: transform 0.2s;
+    transition: transform 0.5s;
     overflow: hidden; 
 }
 
@@ -281,6 +281,14 @@ footer {
     list-style-type: none;
     padding: 0;
   }
+  ol {
+    margin: 0;
+    padding: 0;
+}
+
+ol li {
+    list-style-position: inside;
+}
 
   ul li::before {
     content: "\2022"; 
@@ -342,4 +350,100 @@ ul.lil li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+}
+/* Style for the input field */
+/* Style for the initial tax amount input */
+#initial-amount {
+    width: 50%; /* Reduced width */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Style for the "Calculate Discount" button */
+#calculate-discount {
+    background-color: #0074d9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#calculate-discount:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the paragraph displaying the discounted tax amount */
+#discounted-taxes {
+    margin: 20px 0; /* Increased margin to make it more prominent */
+    font-size: 24px; /* Larger font size */
+    color: #368353; /* Different color for prominence */
+    font-weight: bold; /* Added bold text */
+}
+
+/* Container for the box */
+.box-container {
+    width: 910px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+/* Left side of the box (header and text) */
+.left-side {
+    width: 70%;
+    text-align: left;
+    
+
+}
+
+/* Header style */
+.box-header {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+/* Right side of the box (button) */
+.right-side {
+    width: 30%;
+    text-align: center;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button style */
+.box-button {
+    background-color: #0074d9;
+    color: #fff;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    white-space: nowrap; /* Prevents button from wrapping to a new line */
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1; /* Add this line for precise vertical centering */
+    margin-top: 16px; /* Adjust the margin-top to move the button down */
+
+}
+
+.box-button:hover {
+    background-color: #0056b3;
+    text-decoration: none;
 }
