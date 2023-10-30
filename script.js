@@ -65,10 +65,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Define a function to update and display the ticking number
         function updateTickingNumber() {
-            if (discountedTaxAmount > 0.72 * initialTaxAmount) {
-                discountedTaxAmount -= 1;
-            } else if (discountedTaxAmount > 0.7028 * initialTaxAmount) {
-                discountedTaxAmount -= 0.1;
+            if (discountedTaxAmount > 0.71 * initialTaxAmount) {
+                discountedTaxAmount -= 100;
+            } else if (discountedTaxAmount > 0.7058 * initialTaxAmount) {
+                discountedTaxAmount -= 10;
+            } else if (discountedTaxAmount > 0.7001 * initialTaxAmount) {
+                discountedTaxAmount -= 1; 
             } else if (discountedTaxAmount > 0.70 * initialTaxAmount) {
                 discountedTaxAmount -= 0.01;
             } else {
@@ -80,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
 
         // Update the ticking number every 1000 milliseconds (1 second)
-            const tickingInterval = setInterval(updateTickingNumber, 2);
+            const tickingInterval = setInterval(updateTickingNumber, 8);
         } else {
             alert('Invalid input. Please enter a valid number.');
         }
@@ -89,4 +91,3 @@ document.addEventListener('DOMContentLoaded', function () {
 // Add a click event listener to the button
     calculateDiscountButton.addEventListener('click', calculateAndDisplayDiscount);
 });
-
