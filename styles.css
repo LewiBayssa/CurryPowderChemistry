@@ -244,7 +244,7 @@ footer {
     top: 0;
     z-index: 1;
     width: 100%;
-    background-color: #005ea2;
+    background-color: #032b16;
     color: #fff;
   }
   
@@ -329,7 +329,7 @@ ol li {
 }
 /* Common styles for the navigation bar */
 nav.aj {
-    background-color: #1a4480;
+    background-color: #59945d;
     color: #fff;
     padding: .05px;
     text-align: center;
