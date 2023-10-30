@@ -5,7 +5,7 @@ main {
     width: 80%; 
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff; 
+    background-color: #ededed; 
 }
 
 
@@ -19,16 +19,14 @@ body, h1, h2, p {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ebeff2;
+    background-color: #ededed;
     color: #000000;
     line-height: 1.6;
     text-align: center;
 
 
 }
-.Aakash {
-    overflow: hidden
-}
+
 
 header h1 {
     font-size: 36px;
@@ -61,13 +59,6 @@ nav a {
 
 main h2 {
     margin-top: 20px;
-}
-
-footer {
-    background-color: #3d4551;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
 }
 
 h2 {
@@ -103,7 +94,7 @@ h4 {
 
 main p {
     margin-bottom: 10px;
-    text-align: center;
+    text-align: left;
 
 }
 
@@ -141,6 +132,7 @@ footer p {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    position: relative;
 }
 
 .button:hover {
@@ -162,8 +154,8 @@ footer p {
 }
 
 .initiative-container {
-    position: absolute;
-    top: 25%;
+    position: static;
+    top:45%;
     bottom: 0; 
     right: 0; 
     width: 100%;
@@ -216,16 +208,9 @@ main {
     flex-grow: 1;
 }
 
-footer {
-    background-color: #8B9D83;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative; 
-}
 
 .khoi {
-    bottom: 39px;
+    top: 2px;
 
 }
 .stephen {
@@ -251,7 +236,7 @@ footer {
   .progress-container {
     width: 100%;
     height: 2px;
-    background: #ccc;
+    background: #ededed;
   }
   
   .progress-bar {
@@ -325,7 +310,8 @@ ol li {
     border: 1px solid #ddd; 
 }
 #pencil {
-    background-color: #ffffff; 
+    background-color: #ededed; 
+
 }
 /* Common styles for the navigation bar */
 nav.aj {
@@ -446,4 +432,21 @@ ul.lil li a {
 .box-button:hover {
     background-color: #0056b3;
     text-decoration: none;
+}
+footer {
+    background-color: #3d4551;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+footer {
+    background-color: #3d4551;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; 
+    bottom: 0;
+}
+.center {
+    text-align: center;
 }
