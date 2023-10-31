@@ -11,13 +11,11 @@ main {
 body, h1, h2, p {
     margin: 0;
     padding: 0;
-    font-family: "Arial", sans-serif;
-
-}
+    font-family: 'Poppins', sans-serif;}
 
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;    
     background-color: #ededed;
     color: #000000;
     text-align: center;
