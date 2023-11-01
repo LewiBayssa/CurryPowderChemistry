@@ -1,4 +1,4 @@
-main {
+100e5amain {
     max-width: 1180px; 
     margin: 0 auto; 
     width: 100%; 
@@ -233,7 +233,7 @@ main {
   
   .progress-bar {
     height: 5px;
-    background: #325f1f;
+    background: #100e5a;
     width: 0%;
   }
 
