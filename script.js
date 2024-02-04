@@ -1,3 +1,40 @@
+// Mobile Nav
+
+window.onload = function () {
+    var navigation = document.querySelector(".header-nav")
+    var mobileNavButton = document.getElementById("mobile-menu-button")
+    var mobileNavMenu = document.getElementById("mobile-menu")
+    mobileNavMenu.style.display = 'none'
+
+    mobileNavButton.addEventListener('click', function () {
+        if (mobileNavMenu.style.display === 'none') {
+            mobileNavMenu.style.display = 'block';
+            navigation.style.background = 'var(--clr-background)';
+            mobileNavButton.innerHTML = "Close Menu";
+        } else {
+            mobileNavMenu.style.display = 'none';
+            navigation.style.background = 'linear-gradient(var(--clr-background), var(--clr-background-transparent))';
+            mobileNavButton.innerHTML = "Menu";
+        }
+    });
+}
+
+
+// Progress Bar
+
+document.addEventListener('scroll', function () {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+
+    // Find the 'myBar' element and update its width if it exists.
+    var myBar = document.getElementById("progress-bar");
+    if (myBar) {
+        myBar.style.width = scrolled + "%";
+    }
+});
+
+
 document.addEventListener('DOMContentLoaded', function () {
     // Get references to the button and initiative boxes container
     const toggleButton = document.getElementById('toggle-button');
@@ -17,18 +54,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// Add a scroll event listener to update the progress bar width
-document.addEventListener('scroll', function () {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
-
-    // Find the 'myBar' element and update its width if it exists.
-    var myBar = document.getElementById("myBar");
-    if (myBar) {
-        myBar.style.width = scrolled + "%";
-    }
-});
 document.addEventListener('DOMContentLoaded', function () {
     const toggleButton = document.getElementById('toggle-button');
     const eligibilityContainer = document.getElementById('eligibility-container');

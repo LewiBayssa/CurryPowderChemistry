@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <title>Green Energy Solutions for Homeowners</title>
 </head>
 <body>
@@ -23,18 +24,33 @@
                     </svg>
                 </a>
             </div>
-            <ul>
-                <li><a href="">Green Initiatives</a></li>
-                <li><a href="">Tax Rebates</a></li>
-                <li><a href="">Clean Energy Practices</a></li>
-                <li><a href="">References</a></li>
-            </ul>
+            <div class="desktop-nav">
+                <ul role="list">
+                    <li><a href="">Green Initiatives</a></li>
+                    <li><a href="">Tax Rebates</a></li>
+                    <li><a href="">Clean Energy Practices</a></li>
+                    <li><a href="">References</a></li>
+                </ul>
+            </div>
+            <div class="mobile-nav">
+                <button class="mobile-menu-button" id="mobile-menu-button" type="button">Menu</button>
+                <nav class="mobile-menu" id="mobile-menu">
+                    <ul role="list">
+                        <li><a href="">Green Initiatives</a></li>
+                        <li><a href="">Tax Rebates</a></li>
+                        <li><a href="">Clean Energy Practices</a></li>
+                        <li><a href="">References</a></li>
+                    </ul>
+                </nav>
+            </div>
         </nav>
     </header>
     <main>
         <div class="major-heading">
-            <h1>Green Energy Solutions</h1>
-            <p>Welcome to our guide on green and clean energy solutions for homeowners. Making eco-friendly choices for your home not only helps the environment but can also save you money in the long run. Here are some of the most popular options to consider:</p>
+            <div class="major-heading-container">
+                <h1>Green Energy Solutions</h1>
+                <p>Welcome to our guide on green and clean energy solutions for homeowners. Making eco-friendly choices for your home not only helps the environment but can also save you money in the long run. Here are some of the most popular options to consider:</p>
+            </div>
         </div>
         <div class="landing-articles">
             <article class="landing-article">
@@ -43,19 +59,21 @@
                     <p>Solar energy is one of the most popular and accessible green energy solutions for homeowners. It involves harnessing the power of the sun to generate electricity for your home.</p>
                 </header>
                 <div class="landing-article-image-container">
-                    <img src="" alt="" class="landing-article-image">
+                    <img src="images/solar1.webp" alt="Several solar panels in a forested area." class="landing-article-image">
                 </div>
-                <div class="landing-article-section">
-                    <h3>How It Works</h3>
-                    <p>Solar panels, often installed on rooftops, capture sunlight and convert it into electricity through a process called photovoltaics. This electricity can be used to power your home, and any excess energy can be stored or sold back to the grid.</p>
-                </div>
-                <div class="landing-article-section">
-                    <h3>Cost Considerations</h3>
-                    <p>The initial cost of purchasing and installing solar panels can vary depending on the size of the system, location, and available incentives. However, over time, solar panels can significantly reduce your electricity bills and pay for themselves.</p>
-                </div>
-                <div class="landing-article-section">
-                    <h3>Environmental Benefits</h3>
-                    <p>Solar energy is a clean, renewable source of power that reduces your carbon footprint. By using solar panels, you're contributing to the reduction of greenhouse gas emissions and helping combat climate change.</p>
+                <div class="landing-article-group">
+                    <div class="landing-article-section">
+                        <h3>How It Works</h3>
+                        <p>Solar panels, often installed on rooftops, capture sunlight and convert it into electricity through a process called photovoltaics. This electricity can be used to power your home, and any excess energy can be stored or sold back to the grid.</p>
+                    </div>
+                    <div class="landing-article-section">
+                        <h3>Cost Considerations</h3>
+                        <p>The initial cost of purchasing and installing solar panels can vary depending on the size of the system, location, and available incentives. However, over time, solar panels can significantly reduce your electricity bills and pay for themselves.</p>
+                    </div>
+                    <div class="landing-article-section">
+                        <h3>Environmental Benefits</h3>
+                        <p>Solar energy is a clean, renewable source of power that reduces your carbon footprint. By using solar panels, you're contributing to the reduction of greenhouse gas emissions and helping combat climate change.</p>
+                    </div>
                 </div>
             </article>
             <article class="landing-article">
@@ -64,44 +82,48 @@
                     <p>Residential wind turbines can be an excellent source of green energy for homeowners.</p>
                 </header>
                 <div class="landing-article-image-container">
-                    <img src="" alt="" class="landing-article-image">
+                    <img src="images/wind1.webp" alt="Several wind turbines on an orange field." class="landing-article-image">
                 </div>
-                <div class="landing-article-section">
-                    <h3>How It Works</h3>
-                    <p>Wind turbines, usually installed in open areas, capture the kinetic energy of the wind and convert it into electricity. The spinning blades turn a generator, producing electrical power.</p>
-                </div>
-                <div class="landing-article-section">
-                    <h3>Cost Considerations</h3>
-                    <p>The installation of a residential wind turbine can be more expensive than solar panels due to equipment and installation costs. However, it's considered a long-term investment that can lead to significant energy savings.</p>
-                </div>
-                <div class="landing-article-section">
-                    <h3>Environmental Benefits</h3>
-                    <p>Wind energy is a clean and renewable source of power that doesn't produce greenhouse gas emissions. By generating your electricity from the wind, you're helping reduce reliance on fossil fuels.</p>
+                <div class="landing-article-group">
+                    <div class="landing-article-section">
+                        <h3>How It Works</h3>
+                        <p>Wind turbines, usually installed in open areas, capture the kinetic energy of the wind and convert it into electricity. The spinning blades turn a generator, producing electrical power.</p>
+                    </div>
+                    <div class="landing-article-section">
+                        <h3>Cost Considerations</h3>
+                        <p>The installation of a residential wind turbine can be more expensive than solar panels due to equipment and installation costs. However, it's considered a long-term investment that can lead to significant energy savings.</p>
+                    </div>
+                    <div class="landing-article-section">
+                        <h3>Environmental Benefits</h3>
+                        <p>Wind energy is a clean and renewable source of power that doesn't produce greenhouse gas emissions. By generating your electricity from the wind, you're helping reduce reliance on fossil fuels.</p>
+                    </div>
                 </div>
             </article>
-            <article class="landing-article">
+            <article class="landing-article landing-article-geothermal">
                 <header class="landing-article-header">
                     <h2>Geothermal</h2>
                     <p>Geothermal heating and cooling systems provide an efficient way to regulate your home's temperature.</p>
                 </header>
                 <div class="landing-article-image-container">
-                    <img src="" alt="" class="landing-article-image">
+                    <img src="images/geothermal1.webp" alt="A volcanic area with steam rising from the ground." class="landing-article-image">
                 </div>
-                <div class="landing-article-section">
-                    <h3>How It Works</h3>
-                    <p>Geothermal systems utilize the Earth's stable underground temperatures to heat and cool your home. A network of pipes and a heat pump circulate fluid to transfer heat to and from the ground.</p>
-                </div>
-                <div class="landing-article-section">
-                    <h3>Cost Considerations</h3>
-                    <p>Initial installation costs can be higher than traditional heating and cooling systems, but geothermal systems are highly energy-efficient and can significantly reduce energy bills over time.</p>
-                </div>
-                <div class="landing-article-section">
-                    <h3>Environmental Benefits</h3>
-                    <p>Geothermal energy systems are environmentally friendly, emitting fewer greenhouse gases and pollutants. They reduce your carbon footprint and help protect the environment.</p>
-                </div>
-                <div class="landing-article-section">
-                    <h3>Government Incentives</h3>
-                    <p>In some areas, government incentives and tax credits are available to homeowners who install geothermal heating and cooling systems. These incentives can help offset installation costs.</p>
+                <div class="landing-article-group">
+                    <div class="landing-article-section">
+                        <h3>How It Works</h3>
+                        <p>Geothermal systems utilize the Earth's stable underground temperatures to heat and cool your home. A network of pipes and a heat pump circulate fluid to transfer heat to and from the ground.</p>
+                    </div>
+                    <div class="landing-article-section">
+                        <h3>Cost Considerations</h3>
+                        <p>Initial installation costs can be higher than traditional heating and cooling systems, but geothermal systems are highly energy-efficient and can significantly reduce energy bills over time.</p>
+                    </div>
+                    <div class="landing-article-section">
+                        <h3>Environmental Benefits</h3>
+                        <p>Geothermal energy systems are environmentally friendly, emitting fewer greenhouse gases and pollutants. They reduce your carbon footprint and help protect the environment.</p>
+                    </div>
+                    <div class="landing-article-section">
+                        <h3>Government Incentives</h3>
+                        <p>In some areas, government incentives and tax credits are available to homeowners who install geothermal heating and cooling systems. These incentives can help offset installation costs.</p>
+                    </div>
                 </div>
             </article>
         </div>
@@ -110,10 +132,16 @@
         </div>
         <article class="barriers">
             <div class="major-heading">
-                <h2>Barriers to Expanding Renewable Energy</h2>
-                <p>Price competitiveness is the most obvious barrier to renewable energy installations. In many cases, barriers to expanding renewable energy are regulatory and therefore within state control.</p>
+                <div class="major-heading-container">
+                    <h2>Barriers to Expanding Renewable Energy</h2>
+                    <p>Price competitiveness is the most obvious barrier to renewable energy installations. In many cases, barriers to expanding renewable energy are regulatory and therefore within state control.</p>
+                </div>
             </div>
             <div class="barriers-content">
+                <div class="barriers-group">
+                    <h3>Utility Rate Structures</h3>
+                    <p>Unfavorable utility rate structures have been a perennial barrier to increased deployment of renewable energy technologies. Unless carefully monitored to encourage the development of distributed generation, rate structures can increase the cost of renewables (e.g., through stand-by rates, lack of net metering) or completely prohibit connection to the electrical grid.</p>
+                </div>
                 <div class="barriers-group">
                     <h3>Lack of Interconnection Standards</h3>
                     <p>The absence of standard interconnection rules, or uniform procedures and technical requirements for connecting renewable energy systems to the electric utility's grid, can make it difficult, if not impossible, for renewable systems to connect to the electric utility's grid.</p>
@@ -130,22 +158,24 @@
         </article>
     </main>
     <footer>
-        <div class="footer-head">
-            <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M128 256C128 185.308 185.308 128 256 128C256 57.3076 198.692 0 128 0C57.3076 0 0 57.3076 0 128C0 198.692 57.3076 256 128 256Z" fill="black"/>
-                <path d="M256 128C326.692 128 384 185.308 384 256C454.692 256 512 198.692 512 128C512 57.3076 454.692 0 384 0C313.308 0 256 57.3076 256 128Z" fill="black"/>
-                <path d="M256 384C326.692 384 384 441.308 384 512C454.692 512 512 454.692 512 384C512 313.308 454.692 256 384 256C313.308 256 256 313.308 256 384Z" fill="black"/>
-                <path d="M256 384C185.308 384 128 326.692 128 256C57.3076 256 0 313.308 0 384C0 454.692 57.3076 512 128 512C198.692 512 256 454.692 256 384Z" fill="black"/>
-            </svg>
-            <h2>Green Energy Solutions</h2>
+        <div>
+            <div class="footer-head-container">
+                <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M128 256C128 185.308 185.308 128 256 128C256 57.3076 198.692 0 128 0C57.3076 0 0 57.3076 0 128C0 198.692 57.3076 256 128 256Z" fill="black"/>
+                    <path d="M256 128C326.692 128 384 185.308 384 256C454.692 256 512 198.692 512 128C512 57.3076 454.692 0 384 0C313.308 0 256 57.3076 256 128Z" fill="black"/>
+                    <path d="M256 384C326.692 384 384 441.308 384 512C454.692 512 512 454.692 512 384C512 313.308 454.692 256 384 256C313.308 256 256 313.308 256 384Z" fill="black"/>
+                    <path d="M256 384C185.308 384 128 326.692 128 256C57.3076 256 0 313.308 0 384C0 454.692 57.3076 512 128 512C198.692 512 256 454.692 256 384Z" fill="black"/>
+                </svg>
+                <h2>Green Energy Solutions</h2>
+            </div>
         </div>
         <nav class="footer-nav">
-            <ul class="foot-nav-1">
+            <ul class="foot-nav-1" role="list">
                 <li><a href="">Home</a></li>
                 <li><a href="">Green Initiatives</a></li>
                 <li><a href="">Tax Rebates</a></li>
             </ul>
-            <ul class="foot-nav-2">
+            <ul class="foot-nav-2" role="list">
                 <li><a href="">Clean Energy Practices</a></li>
                 <li><a href="">References</a></li>
             </ul>
