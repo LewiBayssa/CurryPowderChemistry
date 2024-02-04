@@ -1,498 +1,115 @@
-main {
-    max-width: 1180px; 
-    margin: 0 auto; 
-    width: 100%; 
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ededed; 
-}
+@import "fonts/fonts.css";
 
+/* reset */
 
-body, h1, h2, p {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;}
-
-
-body {
-    font-family: 'Poppins', sans-serif;    
-    background-color: #ededed;
-    color: #000000;
-    text-align: center;
-
-
-}
-
-
-header h1 {
-    font-size: 36px;
-    margin: 0;
-    text-align: center;
-    padding: 8px;
-
-
-}
-
-nav ul {
-    list-style: none;
-    list-style-type: none
-
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-    list-style-type: none
-
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-
-}
-
-main h2 {
-    margin-top: 20px;
-}
-
-h2 {
-    margin-top: 20px;
-    color: #000000;
-    text-align: center;
-
-
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-h3 {
-    font-size: 24px;
-    color: #000000;
-    text-align: center;
-
-
-}
-
-h4 {
-    font-weight: bold;
-    text-align: center;
-    font-size:21px
-
-
-}
-
-main p {
-    margin-bottom: 10px;
-    text-align: left;
-    font-size:19px
-
-}
-
-section {
-    background-color: #fff; 
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-}
-
-img {
-    max-width: 100%; 
-    height: auto; 
-}
-
-
-
-
-footer p {
-    font-size: 14px;
-    
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #0074d9; 
-    color: #fff; 
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    position: relative;
-    cursor: pointer;
-
-    
-}
-button span {
-    cursor: pointer; /* Set pointer cursor for the text inside the button */
-}
-
-.button:hover {
-    background-color: #0056b3; 
-    color: #fff; 
-
-}
-
-#toggle-button {
-    background-color: #0074d9; 
-    color: #fff !important;
-    border: none; 
-    padding: 10px 20px; 
-    cursor: pointer; 
-    transition: background-color 0.3s; 
-    border-radius: 5px; 
-    background-color: #0074d9;
-    color: #fff;
-    padding: 15px 35px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    text-decoration: none;
-}
-
-#toggle-button:hover {
-    background-color: #0056b3; 
-    color: #fff; 
-
-}
-
-.initiative-container {
-    display: flex;
-    justify-content: space-between; /* Distribute space between elements */
-}
-
-
-.initiative {
-    flex-grow: 1; /* Make the elements grow to fill available space */
-    height: 200px; /* You can keep the fixed height if needed */
-    margin: 20px;
-    text-align: center;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    transition: transform 0.5s;
-    overflow: hidden;
-    flex: 1;
-}
-
-
-
-.initiative:hover {
-    transform: scale(1.05);
-}
-
-.initiative img {
-    width: 100%;
-    height: 100%; 
-    object-fit: cover; 
-    border-radius: 10px;
-    margin-bottom: 50px; 
-
-}
-
-.initiative h3 {
-    margin-top: 10px;
-}
-.container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
-    flex-grow: 1;
-}
-
-main {
-    flex-grow: 1;
-}
-
-
-.khoi {
-    top: 2px;
-
-}
-.stephen {
-    position: fixed;
-    top: 0;
-    height: 125px;
-    width: 100%;
-    background: white;
-    padding: 1rem 2rem;
-  }
-
-  
-
-.header {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    background-color: #064a27;
-    color: #fff;
-  }
-  
-  .progress-container {
-    width: 100%;
-    height: 2px;
-    background: #ededed;
-  }
-  
-  .progress-bar {
-    height: 5px;
-    background: #100e5a;
-    width: 0%;
-  }
-
-  .example::-webkit-scrollbar {
-    display: none;
-  }
-  .vishwa {
-    color: #207544;
-    font-size: 25px;
-    font-weight: bolder;
-}
-
-
-
-.team {
-    color:#000000
-}
-.round {
-    border-radius: 50px
-}
-  ul {
-    list-style-type: none;
-    padding: 0;
-    font-size:19px
-
-  }
-  ol {
-    margin: 0;
-    padding: 0;
-    font-size:19px
-
-}
-
-ol li {
-    list-style-position: inside;
-}
-
-  ul li::before {
-    content: "\2022"; 
-    padding-right: 5px; 
-  }
-  ul.lil li::before {
-    content: none; 
-}
-#wide {
-    width: 1000px; 
-    height: 500px; 
-}
-.image-text-container {
-    display: flex;
-    align-items: center;
-}
-
-.image {
-    flex: 1;
-    max-width: 50%;
-    padding: 10px;
-}
-
-.text {
-    flex: 1;
-    max-width: 50%;
-    padding: 10px;
-}
-.content-box {
-    width: 80%; 
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f5f5f5; 
-    border: 1px solid #ddd; 
-}
-
-/* Common styles for the navigation bar */
-nav.aj {
-    background-color: #59945d;
-    color: #fff;
-    padding: .05px;
-    text-align: center;
-}
-
-/* Common styles for the navigation list */
-ul.lil {
-    list-style: none;
-    padding: 0;
-}
-
-ul.lil li {
-    display: inline;
-    margin-right: 20px;
-}
-
-ul.lil li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-/* Style for the input field */
-/* Style for the initial tax amount input */
-#initial-amount {
-    width: 50%; /* Reduced width */
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-/* Style for the "Calculate Discount" button */
-#calculate-discount {
-    background-color: #0074d9;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    text-decoration: inherit;
 }
 
-#calculate-discount:hover {
-    background-color: #0056b3;
+html {
+    overflow-x: hidden;
 }
 
-/* Style for the paragraph displaying the discounted tax amount */
-#discounted-taxes {
-    margin: 20px 0; /* Increased margin to make it more prominent */
-    font-size: 24px; /* Larger font size */
-    color: #368353; /* Different color for prominence */
-    font-weight: bold; /* Added bold text */
-}
-
-/* Container for the box */
-.box-container {
-    width: 910px;
-    margin: 0 auto;
-    border: 1px solid #ccc;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 10px;
-}
-
-/* Left side of the box (header and text) */
-.left-side {
-    width: 70%;
-    text-align: left;
-    
-
-}
-
-/* Header style */
-.box-header {
-    font-size: 25px;
-    font-weight: bold;
-}
-
-
-
-/* Right side of the box (button) */
-.right-side {
-    width: 30%;
-    text-align: center;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Button style */
-.box-button {
-    background-color: #0074d9;
-    color: #fff !important;
-    padding: 15px 35px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    text-decoration: none;
-    white-space: nowrap; /* Prevents button from wrapping to a new line */
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 1; /* Add this line for precise vertical centering */
-    margin-top: 16px; /* Adjust the margin-top to move the button down */
-
-}
-
-.box-button:hover {
-    background-color: #0056b3;
-    text-decoration: none;
-}
-footer {
-    background-color: #3d4551;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-footer {
-    background-color: #3d4551;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative; 
-    bottom: 0;
-}
-.center {
-    text-align: center;
-}
-.pencil {
-    max-width: 1800px; 
-    margin: 0 auto; 
-    width: 100%; 
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ededed; 
-}
-.book {
-    max-width: 1180px; 
-    margin: 0 auto; 
-    width: 100%; 
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ededed; 
-}
-#orange {
-    background-color: #0074d9;
-    color: #ffffff; /* Text color */
-    text-decoration: none; /* Remove underline */
-    padding: 15px 35px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    white-space: nowrap;
-    display: inline-block;
-    vertical-align: middle;
+body {
     line-height: 1;
-    margin-top: 16px;
+    -webkit-font-smoothing: antialiased;
 }
 
-#orange:hover {
-    background-color: #0056b3;
-    text-decoration: none; /* Remove underline on hover */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
 }
-a {
-    text-decoration: none;
+
+svg {
+    height: auto;
+    width: 100%;
 }
-a:-webkit-any-link {
-    color: inherit; /* Use the color inherited from parent element */
-    cursor: pointer;   /* Use the default cursor style */
-    text-decoration: none; /* Remove underline */
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* sr_only */
+
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
+
+/* variables */
+
+:root {
+    --clr-background: hsl(0 0% 95%);
+    --clr-foreground: hsl(0 0% 0%);
+    --clr-border: hsl(0 0% 75%);
+    --clr-placeholder: hsl(0 0% 35%);
+    --clr-accent: hsl(80 85% 66%);
+
+    --fw-normal: 300;
+    --fw-semi-bold: 400;
+    --fw-bold: 600;
+
+    --fs-heading-1: 4rem;
+    --fs-heading-2: 3rem;
+    --fs-heading-3: 1.875rem;
+    --fs-basic: 1.25rem;
+    --fs-detail: 1rem;
+
+    --dm-0050: 0.5rem;
+    --dm-0100: 1.5rem;
+    --dm-0200: 3rem;
+    --dm-0300: 6rem;
+}
+
+/* typography media */
+
+/* @media (width < 32rem) {
+    html {
+        font-size: 87.5%;
+    }
+} */
+
+/* basic style */
+
+:root {
+    font-family: "Inter", sans-serif;
+    font-weight: var(--fw-uncut-regular);
+    font-style: normal;
+
+    background-color: var(--clr-background);
+    color: var(--clr-foreground);
+}
+
+@supports (font-variation-settings: normal) {
+    :root { font-family: "InterVariable", sans-serif; font-optical-sizing: auto; }
+}
+
+/* header */
+
+.header-nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: var(--dm-0100);
+}
+
+.header-nav > .link-container svg {
+    height: var(--dm-0100);
 }
