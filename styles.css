@@ -54,6 +54,14 @@ p, h1, h2, h3, h4, h5, h6 {
     width: 1px;
 }
 
+/* typography media */
+
+@media (width < 40rem) {
+    :root {
+        font-size: 87.5%;
+    }
+}
+
 /* variables */
 
 :root {
@@ -81,14 +89,6 @@ p, h1, h2, h3, h4, h5, h6 {
     --dm-0300: 6rem;
 
     --border: 2px solid var(--clr-border);
-}
-
-/* typography media */
-
-@media (width < 32rem) {
-    html {
-        font-size: 87.5%;
-    }
 }
 
 /* basic style */
@@ -901,6 +901,12 @@ body > footer {
 
     .initiative-image img {
         max-height: 30vh;
+    }
+
+    /* rebates */
+
+    .savings-input-container {
+        grid-template-columns: 1fr;
     }
 
     /* practices */
