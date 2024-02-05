@@ -449,6 +449,18 @@ main {
     font-size: var(--fs-basic);
 }
 
+.improvement-area-content a {
+    display: block;
+    margin-block-start: var(--dm-0100);
+    font-weight: var(--fw-semi-bold);
+    color: var(--clr-foreground);
+    text-decoration: underline;
+}
+
+.improvement-area-content a:hover {
+    text-decoration-style: dashed;
+}
+
     /* eligibility */
 
     .eligibility-container {
