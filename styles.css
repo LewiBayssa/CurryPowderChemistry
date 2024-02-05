@@ -85,11 +85,11 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* typography media */
 
-/* @media (width < 32rem) {
+@media (width < 32rem) {
     html {
         font-size: 87.5%;
     }
-} */
+}
 
 /* basic style */
 
