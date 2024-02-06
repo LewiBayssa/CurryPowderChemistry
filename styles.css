@@ -353,6 +353,49 @@ main {
     object-fit: cover;
 }
 
+    /* solar */
+
+    .initiative-container blockquote {
+        padding: var(--dm-0100);
+        border: var(--border);
+        margin-block: var(--dm-0100);
+        font-size: var(--fs-basic);
+    }
+
+    .initiative-container blockquote p {
+        font-weight: var(--fw-semi-bold);
+    }
+
+    .initiative-container blockquote footer {
+        margin-block-start: var(--dm-0050);
+        text-indent: 4ch;
+    }
+
+    .initiative-container blockquote footer::before {
+        content: "\2014";
+    }
+
+    .initiative-container h2, .initiative-container h3, .initiative-container h4 {
+        margin-block-start: var(--dm-0200);
+    }
+
+    /* wind */
+
+    .initiative-container p > a {
+        color: var(--clr-foreground);
+        text-decoration: underline;
+    }
+
+    .initiative-container ul {
+        margin-block-start: var(--dm-0100);
+        font-size: var(--fs-basic);
+        line-height: 1.5;
+    }
+
+    .initiative-container ul li:not(:first-child) {
+        margin-block-start: var(--dm-0050);
+    }
+
 /* tax rebates */
 
 .tax-rebate-button {
@@ -988,7 +1031,7 @@ body > footer {
     /* progress bar */
 .progress-bar-container {
     width: 100%;
-    height: 2px;
+    height: 4px;
     background: var(--clr-background);
 }
 
