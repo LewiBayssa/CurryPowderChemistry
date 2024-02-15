@@ -827,6 +827,8 @@ body > footer {
         grid-column: 3 / -1;
     }
 
+    .initiative-container { max-width: 70ch; }
+
     /* tax rebates */
 
     .improvement-areas {
@@ -850,6 +852,8 @@ body > footer {
         .eligibility-section ul, .eligibility-section ol {
             list-style-position: inside;
         }
+
+        .eligibility-section section { max-width: 70ch; }
 
     /* referemces */
 
