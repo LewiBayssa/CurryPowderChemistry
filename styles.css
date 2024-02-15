@@ -353,6 +353,13 @@ main {
     object-fit: cover;
 }
 
+.initiative-page-image {
+    width: 100%;
+    border: var(--dm-0100);
+    margin-block-start: var(--dm-0100);
+    border: var(--border);
+}
+
     /* solar */
 
     .initiative-container blockquote {
@@ -394,6 +401,29 @@ main {
 
     .initiative-container ul li:not(:first-child) {
         margin-block-start: var(--dm-0050);
+    }
+
+    /* geothermal */
+
+    .geothermal-video {
+        width: 100%;
+        margin-block-start: var(--dm-0100);
+    }
+
+    /* hydro */
+
+    .initiative-container ol {
+        font-size: var(--fs-basic);
+        line-height: 1.5;
+        margin-block-start: var(--dm-0050);
+    }
+
+    .initiative-container ol li:not(:first-child) {
+        margin-block-start: var(--dm-0050);
+    }
+
+    .hydro-image {
+        padding: var(--dm-0100);
     }
 
 /* tax rebates */
@@ -588,6 +618,12 @@ main {
 
 /* practices */
 
+.practices-image {
+    width: 100%;
+    margin-block-start: var(--dm-0100);
+    border: var(--border);
+}
+
 .practices-list {
     border-block: var(--border);
     list-style: none;
@@ -639,9 +675,17 @@ main {
 
 /* references */
 
+.references-container h2 {
+    margin-block-start: var(--dm-0100);
+}
+
+.references-container h2:not(:first-of-type) {
+    margin-block-start: var(--dm-0200);
+}
+
 .references, .documents {
     font-size: var(--fs-basic);
-    margin-block-start: var(--dm-0200);
+    margin-block-start: var(--dm-0100);
     line-height: 1.5;
 }
 
@@ -828,6 +872,12 @@ body > footer {
     }
 
     .initiative-container { max-width: 70ch; }
+
+    /* hydro */
+
+    .initiative-container ol {
+        list-style-position: inside;
+    }
 
     /* tax rebates */
 
