@@ -373,6 +373,8 @@ main {
         font-weight: var(--fw-semi-bold);
     }
 
+    .initiative-container blockquote p::before, .initiative-container blockquote p::after { content: "\""; }
+
     .initiative-container blockquote footer {
         margin-block-start: var(--dm-0050);
         text-indent: 4ch;
