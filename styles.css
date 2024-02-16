@@ -691,7 +691,7 @@ main {
     line-height: 1.5;
 }
 
-.references a, .documents a {
+.references-container a {
     color: var(--clr-foreground);
     text-decoration: underline;
 }
