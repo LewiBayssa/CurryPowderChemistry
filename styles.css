@@ -343,7 +343,7 @@ main {
 
 .initiative-image {
     grid-column: 4 / -1;
-    max-height: 30vh;
+    height: 30vh;
     border-inline-start: var(--border);
 }
 
@@ -411,6 +411,8 @@ main {
         width: 100%;
         margin-block-start: var(--dm-0100);
     }
+
+    @media (width > 75rem) { .geothermal-video { height: 600px; } }
 
     /* hydro */
 
